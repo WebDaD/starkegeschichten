@@ -1,0 +1,14 @@
+{
+  "name": "starkegeschichten",
+  "version": "1.0.0",
+  "description": "Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dominik Sigmund",
+  "license": "ISC",
+  "dependencies": {
+    "startbootstrap-coming-soon": "^5.0.0"
+  }
+}
