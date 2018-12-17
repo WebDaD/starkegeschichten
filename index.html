@@ -71,22 +71,25 @@
         </a>
       </div>
     </div>
-    <div class="row">
+    <div class="row navigation">
       <div class="col-auto text-left">
-        <a class="nav-link text-dark font-weight-bold" href="#" target="_blank">Über das Projekt</a>
+        <a class="nav-link text-dark font-weight-bold" href="#projekt" style="padding-left: 0;">Über das Projekt</a>
       </div>
       <div class="col-auto text-left">
-        <a class="nav-link text-dark font-weight-bold" href="#" target="_blank">Partner</a>
+        <a class="nav-link text-dark font-weight-bold" href="#partner">Partner</a>
+      </div>
+      <div class="col-auto text-left" id="nav-filme">
+        <a class="nav-link text-dark font-weight-bold" href="#filme">Die Filme</a>
       </div>
     </div>
   </div>
   <header class="jumbotron">
     <div class="row">
-      <div class="col-md-5">
+      <div class="col-md-5 text-center">
         <img src="images/android-chrome-512x512.png" class="img-fluid mainimg" alt="Starke Geschichten" />
       </div>
       <div class="col-md-7">
-        Wann hast du eigentlich gemerkt, dass du stark bist?<br />
+        Wann hast du eigentlich gemerkt, dass du stark bist?<br /><br/>
         In 700 Geschichten aus 50 Ländern erzählten Kinder, Jugendliche und Erwachsene
         rückblickend ihre ganz
         persönlichen Stärkeerlebnisse.<br />
@@ -102,8 +105,17 @@
             Deutschland</a>
         </div>
         <div class="col">
-          <a href="#namibia" class="btn btn-light btn-lg btn-block text-left" role="button"><span class="flag-icon flag-icon-na"></span>
-            Namibia</a>
+          <a href="#aegypten" class="btn btn-light btn-lg btn-block text-left" role="button"><span class="flag-icon flag-icon-eg"></span>
+            Ägypten</a>
+        </div>
+        <div class="w-100"></div>
+        <div class="col">
+          <a href="#norwegen" class="btn btn-light btn-lg btn-block text-left" role="button"><span class="flag-icon flag-icon-no"></span>
+            Norwegen</a>
+        </div>
+        <div class="col">
+          <a href="#libanon" class="btn btn-light btn-lg btn-block text-left" role="button"><span class="flag-icon flag-icon-lb"></span>
+            Libanon</a>
         </div>
         <div class="w-100"></div>
         <div class="col">
@@ -111,16 +123,22 @@
             Thailand</a>
         </div>
         <div class="col">
-          <a href="#land1" class="btn btn-light btn-lg btn-block text-left" role="button"><span class="flag-icon flag-icon-de"></span>
-            LAND</a>
+          <a href="#taiwan" class="btn btn-light btn-lg btn-block text-left" role="button"><span class="flag-icon flag-icon-tw"></span>
+            Taiwan</a>
+        </div>
+        <div class="w-100"></div>
+        <div class="col">
+          <a href="#mongolei" class="btn btn-light btn-lg btn-block text-left" role="button"><span class="flag-icon flag-icon-mn"></span>
+            Mongolei</a>
         </div>
         <div class="col">
-          <a href="#land2" class="btn btn-light btn-lg btn-block text-left" role="button"><span class="flag-icon flag-icon-th"></span>
-            LAND 2</a>
+          <a href="#namibia" class="btn btn-light btn-lg btn-block text-left" role="button"><span class="flag-icon flag-icon-na"></span>
+            Namibia</a>
         </div>
+        <div class="w-100"></div>
         <div class="col">
-          <a href="#land3" class="btn btn-light btn-lg btn-block text-left" role="button"><span class="flag-icon flag-icon-de"></span>
-            LAND 3</a>
+          <a href="#argentinien" class="btn btn-light btn-lg btn-block text-left" role="button"><span class="flag-icon flag-icon-ar"></span>
+            Argentinien</a>
         </div>
       </div>
     </div>
@@ -130,18 +148,84 @@
     <hr />
     <div id="flow">
       <h2 id="deutschland"><span class="flag-icon flag-icon-de"></span> Deutschland</h2>
-      <div class="card text-white" data-video="videos/1_Kirschbaum.mp4">
-        <img class="card-img" src="images/1_Kirschbaum.png" />
+      <div class="card text-white" data-video="videos/1_Kirschbaum_Deutschland.mp4">
+        <img class="card-img" src="images/Isa_und_der_Kirschbaum__Deutschland.png" />
         <video class="card-img" controls>
           <source src="" type="video/mp4">
         </video>
         <div class="card-img-overlay">
-          <h5 class="card-title">Kirschbaum</h5>
+          <h5 class="card-title">Isa und der Kirschbaum</h5>
+        </div>
+      </div>
+      <hr />
+      <h2 id="ägypten"><span class="flag-icon flag-icon-eg"></span> Ägypten</h2>
+      <div class="card text-white" data-video="videos/2_Grosser_Bruder_Aegypten.mp4">
+        <img class="card-img" src="images/Der_Tag_an_dem_ich_zum_grossen_Bruder_wurde__aegypten.png" />
+        <video class="card-img" controls>
+          <source src="" type="video/mp4">
+        </video>
+        <div class="card-img-overlay">
+          <h5 class="card-title">Der Tag, an dem ich zum großen Bruder wurde</h5>
+        </div>
+      </div>
+      <hr />
+      <h2 id="norwegen"><span class="flag-icon flag-icon-no"></span> Norwegen</h2>
+      <div class="card text-white" data-video="videos/3_Nicht_Rosa_Norwegen.mp4">
+        <img class="card-img" src="images/Bitte_nicht_Rosa_Norwegen.png" />
+        <video class="card-img" controls>
+          <source src="" type="video/mp4">
+        </video>
+        <div class="card-img-overlay">
+          <h5 class="card-title">Bitte nicht Rosa!</h5>
+        </div>
+      </div>
+      <hr />
+      <h2 id="libanon"><span class="flag-icon flag-icon-lb"></span> Libanon</h2>
+      <div class="card text-white" data-video="videos/4-Geschlagen_Syrien.mp4">
+        <img class="card-img" src="images/Geschlagen!__Libanon.png" />
+        <video class="card-img" controls>
+          <source src="" type="video/mp4">
+        </video>
+        <div class="card-img-overlay">
+          <h5 class="card-title">Geschlagen</h5>
+        </div>
+      </div>
+      <hr />
+      <h2 id="thailand"><span class="flag-icon flag-icon-th"></span> Thailand</h2>
+      <div class="card text-white" data-video="videos/7_Ballspielen_verboten_Thailand.mp4">
+        <img class="card-img" src="images/Ballspielen_verboten_Thailand.png" />
+        <video class="card-img" controls>
+          <source src="" type="video/mp4">
+        </video>
+        <div class="card-img-overlay">
+          <h5 class="card-title">Ballspielen verboten!</h5>
+        </div>
+      </div>
+      <hr />
+      <h2 id="taiwan"><span class="flag-icon flag-icon-tw"></span> Taiwan</h2>
+      <div class="card text-white" data-video="videos/11_Elternstreit_Taiwan.mp4">
+        <img class="card-img" src="images/Wenn_Eltern_immer_nur_streiten__Taiwan.png" />
+        <video class="card-img" controls>
+          <source src="" type="video/mp4">
+        </video>
+        <div class="card-img-overlay">
+          <h5 class="card-title">Wenn Eltern immer nur streiten</h5>
+        </div>
+      </div>
+      <hr />
+      <h2 id="mongolei"><span class="flag-icon flag-icon-mn"></span> Mongolei</h2>
+      <div class="card text-white" data-video="videos/9-Sleepy_Mongolei.mp4">
+        <img class="card-img" src="images/Sleepy_das_Kueken__Mongolei.png" />
+        <video class="card-img" controls>
+          <source src="" type="video/mp4">
+        </video>
+        <div class="card-img-overlay">
+          <h5 class="card-title">Sleepy, das Küken</h5>
         </div>
       </div>
       <hr />
       <h2 id="namibia"><span class="flag-icon flag-icon-na"></span> Namibia</h2>
-      <div class="card text-white" data-video="videos/8_Allein_im_Busch.mp4">
+      <div class="card text-white" data-video="videos/8_Allein_im_Busch_Namibia.mp4">
         <img class="card-img" src="images/8_Allein_im_Busch.png" />
         <video class="card-img" controls>
           <source src="" type="video/mp4">
@@ -151,50 +235,48 @@
         </div>
       </div>
       <hr />
-      <h2 id="thailand"><span class="flag-icon flag-icon-th"></span> Thailand</h2>
-      <div class="card text-white" data-video="videos/11_Elternstreit.mp4">
-        <img class="card-img" src="images/11_Elternstreit.png" />
+      <h2 id="argentinien"><span class="flag-icon flag-icon-ar"></span> Argentinien</h2>
+      <div class="card text-white" data-video="videos/13-Stromausfall_Argentinien.mp4">
+        <img class="card-img" src="images/Stromausfall__Argentinien.png" />
         <video class="card-img" controls>
           <source src="" type="video/mp4">
         </video>
         <div class="card-img-overlay">
-          <h5 class="card-title">Elternstreit</h5>
-        </div>
-      </div>
-      <hr />
-      <h2 id="land1"><span class="flag-icon flag-icon-de"></span> LAND 1</h2>
-      <div class="card text-white" data-video="videos/3_Nicht_Rosa.mp4">
-        <img class="card-img" src="images/3_Nicht_Rosa.png" />
-        <video class="card-img" controls>
-          <source src="" type="video/mp4">
-        </video>
-        <div class="card-img-overlay">
-          <h5 class="card-title">Nicht Rosa</h5>
-        </div>
-      </div>
-      <hr />
-      <h2 id="land2"><span class="flag-icon flag-icon-de"></span> LAND 2</h2>
-      <div class="card text-white" data-video="videos/7_Ballspielen_verboten.mp4">
-        <img class="card-img" src="images/7_Ballspielen_verboten.png" />
-        <video class="card-img" controls>
-          <source src="" type="video/mp4">
-        </video>
-        <div class="card-img-overlay">
-          <h5 class="card-title">Ballspielen verboten</h5>
-        </div>
-      </div>
-      <hr />
-      <h2 id="land3"><span class="flag-icon flag-icon-de"></span> LAND 3</h2>
-      <div class="card text-white" data-video="videos/2_Grosser_Bruder.mp4">
-        <img class="card-img" src="images/2_Grosser_Bruder.png" />
-        <video class="card-img" controls>
-          <source src="" type="video/mp4">
-        </video>
-        <div class="card-img-overlay">
-          <h5 class="card-title">Großer Bruder</h5>
+          <h5 class="card-title">Stromausfall</h5>
         </div>
       </div>
     </div>
+  </div>
+  <hr/>
+  <div class="container" id="projekt">
+    <h2>Über das Projekt</h2>
+    <p>Grundlage des Projekts “Starke Geschichten für starke Kinder” ist eine weltweit bislang einzigartige Studie des Internationale Zentralinstitut für das Jugend- und Bildungsfernsehen (IZI) beim Bayerischen Rundfunk, der Stiftung PRIX JEUNESSE mit Unterstützung des Goethe Instituts. Vier Jahre lang wurden weltweit Workshops durchgeführt, in denen Kinder, Jugendliche und Erwachsene persönliche Stärke-Erlebnisse gemalt und niedergeschrieben haben. Aus den mittlerweile 700 Geschichten aus 50 Ländern wurden einige als Kurzfilme verfilmt. Aktuell sind an dieser internationalen Koproduktion 17 Fernsehsender beteiligt.</p>
+    <div class="row">
+      <div class="col-md-4 col-12">
+        <img src="images/starke_geschichten_projekt_1.png" class="img-fluid"/>
+      </div>
+      <div class="col-md-4 col-12">
+        <img src="images/starke_geschichten_projekt_2.png" class="img-fluid"/>
+      </div>
+      <div class="col-md-4 col-12">
+        <img src="images/starke_geschichten_projekt_3.png" class="img-fluid"/>
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <div class="container" id="partner">
+    <h2>Partner</h2>
+    <h3>Internationale Koproduktionspartner</h3>
+    <table class="table table-striped">
+      <tr>
+        <td class="text-center"><img src="images/Logo_Pakapaka.jpg" class="img-fluid partnerlogo"/></td>
+        <td class="align-middle">Argentinien: PakaPaka</td>
+      </tr>
+    </table>
+  </div>
+  <hr/>
+  <div class="container" id="filme">
+    <h2>Die Filme</h2>
   </div>
   <div class="w-100 h-25"></div>
   <footer class="navbar sticky-bottom navbar-dark bg-dark">
@@ -208,11 +290,6 @@
         </div>
         <div class="col-md-auto text-center">
           <a class="nav-link text-light" href="https://www.webdad.eu/" target="_blank">powered by WebDaD.eu</a>
-        </div>
-        <div class="col-md-auto text-center">
-          <a class="nav-link text-light" href="http://www.br-online.de/jugend/izi/deutsch/home.htm" target="_blank">Ein
-            Projekt
-            des IZI</a>
         </div>
       </div>
 

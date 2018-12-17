@@ -7,6 +7,15 @@ header {
   margin-bottom: 20px;
 }
 
+h1 {
+  color: #075c98;
+}
+
+.mainimg {
+  height: 256px;
+  width: auto;
+}
+
 .col-sm, .col {
   margin-bottom: 20px;
 }
@@ -56,15 +65,33 @@ h5.card-title {
   #world-nav {
     display:none;
   }
+  #filme {
+    display:none;
+  }
+  #nav-filme {
+    display:none;
+  }
   h1, .logocol {
     text-align: center!important;
   }
+  img.logo {
+    height: 60px;
+  }
+  .navigation {
+    margin-top: 30px;
+  }
   .mainimg {
+    width:100%;
+    height:auto;
     margin-bottom: 10px;
   }
   .jumbotron {
     font-size:4.7vw;
   }
+  .partnerlogo {
+    max-width: 100px;
+  }
+
 }
 @media (min-width: 578px) {
   #mobile-nav, #flow {
@@ -77,16 +104,20 @@ h5.card-title {
     text-align: right!important;
   }
   .jumbotron {
-    font-size:2.7vw;
+    font-size:1.7vw;
+  }
+  .partnerlogo {
+    max-width: 256px;
   }
 }
 .jumbotron {
   margin-top:10px;
-  background-color: #1e90ff;
+  background-color: #075c98;
   color:white;
   border-radius: 0;
 }
 .flag-marker {
+  display: none;
   position:absolute;
   z-index:999;
   width: 100px;
