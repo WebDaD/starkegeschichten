@@ -128,3 +128,10 @@ h5.card-title {
 video.card-img {
   display:none;
 }
+
+.videoimage video {
+  display:none;
+}
+.videoimage img {
+  cursor:pointer;
+}

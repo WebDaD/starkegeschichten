@@ -1,5 +1,22 @@
 /* global $ */
 $(document).ready(function () {
+  $('.slides > img:gt(0)').hide()
+  setInterval(function () {
+    $('.slides > img:first')
+      .fadeOut(1000)
+      .next()
+      .fadeIn(1000)
+      .end()
+      .appendTo('.slides')
+  }, 5000)
+  $('.videoimage img').on('click', function () {
+    $(this).parent().find('video').show()
+    $(this).parent().find('video')[0].play()
+    $(this).parent().find('img').hide()
+  })
+  $('.mainimg').on('click', function () {
+    $('html, body').animate({scrollTop: ($('#' + $(this).data('scrollTo')).offset().top)}, 'slow')
+  })
   $('.card').on('click', function () {
     $(this).find('video source').attr('src', $(this).data('video'))
     $(this).find('video')[0].load()
@@ -26,7 +43,8 @@ $(document).ready(function () {
       hoverColor: '#BB0029',
       backgroundColor: 'white',
       click: function (country) {
-        loadVideo(country)
+        // loadVideo(country)
+        scrollTo(country)
       },
       disableCountries: ['af', 'ax', 'al', 'dz', 'as', 'ad', 'ao', 'ai', 'aq', 'ag', 'am', 'aw', 'au', 'at', 'az', 'bs', 'bh', 'bd', 'bb', 'by', 'be', 'bz', 'bj', 'bm', 'bt', 'bo', 'ba', 'bw', 'bv', 'br', 'io', 'bn', 'bg', 'bf', 'bi', 'kh', 'cm', 'ca', 'cv', 'ky', 'cf', 'td', 'cl', 'cn', 'cx', 'cc', 'co', 'km', 'cg', 'cd', 'ck', 'cr', 'ci', 'hr', 'cu', 'cy', 'cz', 'dk', 'dj', 'dm', 'do', 'ec', 'sv', 'gq', 'er', 'ee', 'et', 'fk', 'fo', 'fj', 'fi', 'fr', 'gf', 'pf', 'tf', 'ga', 'gm', 'ge', 'gh', 'gi', 'gr', 'gl', 'gd', 'gp', 'gu', 'gt', 'gg', 'gn', 'gw', 'gy', 'ht', 'hm', 'va', 'hn', 'hk', 'hu', 'is', 'in', 'id', 'ir', 'iq', 'ie', 'im', 'il', 'it', 'jm', 'jp', 'je', 'jo', 'kz', 'ke', 'ki', 'kr', 'kw', 'kg', 'la', 'lv', 'ls', 'lr', 'ly', 'li', 'lt', 'lu', 'mo', 'mk', 'mg', 'mw', 'my', 'mv', 'ml', 'mt', 'mh', 'mq', 'mr', 'mu', 'yt', 'mx', 'fm', 'md', 'mc', 'me', 'ms', 'ma', 'mz', 'mm', 'nr', 'np', 'nl', 'an', 'nc', 'nz', 'ni', 'ne', 'ng', 'nu', 'nf', 'mp', 'om', 'pk', 'pw', 'ps', 'pa', 'pg', 'py', 'pe', 'ph', 'pn', 'pl', 'pt', 'pr', 'qa', 're', 'ro', 'ru', 'rw', 'bl', 'sh', 'kn', 'lc', 'mf', 'pm', 'vc', 'ws', 'sm', 'st', 'sa', 'sn', 'sw', 'rs', 'sc', 'sl', 'sg', 'sk', 'si', 'sb', 'so', 'za', 'gs', 'es', 'lk', 'sd', 'sr', 'sj', 'sz', 'se', 'ch', 'sy', 'tj', 'tz', 'tl', 'tg', 'tk', 'to', 'tt', 'tn', 'tr', 'tm', 'tc', 'tv', 'ug', 'ua', 'ae', 'gb', 'us', 'um', 'uy', 'uz', 'vu', 've', 'vn', 'vg', 'vi', 'wf', 'eh', 'ye', 'zm', 'zw'],
       individualCountrySettings: [
@@ -70,5 +88,23 @@ function loadVideo (country) {
     $('.custom-modal').show()
     $('.custom-modal video source').attr('src', video)
     $('.custom-modal video')[0].load()
+  }
+}
+function scrollTo (country) {
+  let element = ''
+  switch (country) {
+    case 'de': element = 'videos/1_Kirschbaum_Deutschland.mp4'; break
+    case 'eg': element = 'grosser_bruder'; break
+    case 'no': element = 'videos/3_Nicht_Rosa_Norwegen.mp4'; break
+    case 'lb': element = 'videos/4-Geschlagen_Syrien.mp4'; break
+    case 'th': element = 'videos/7_Ballspielen_verboten_Thailand.mp4'; break
+    case 'tw': element = 'videos/11_Elternstreit_Taiwan.mp4'; break
+    case 'mn': element = 'videos/9-Sleepy_Mongolei.mp4'; break
+    case 'na': element = 'videos/8_Allein_im_Busch_Namibia.mp4'; break
+    case 'ar': element = 'videos/13-Stromausfall_Argentinien.mp4'; break
+    default: element = ''; break
+  }
+  if (element !== '') {
+    $('html, body').animate({ scrollTop: ($('#' + element).offset().top)}, 'slow')
   }
 }
