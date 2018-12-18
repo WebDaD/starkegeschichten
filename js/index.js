@@ -1,28 +1,31 @@
 /* global $ */
 $(document).ready(function () {
   $('.slides > img:gt(0)').hide()
-  setInterval(function () {
+  /*setInterval(function () {
     $('.slides > img:first')
       .fadeOut(1000)
       .next()
       .fadeIn(1000)
       .end()
       .appendTo('.slides')
-  }, 5000)
-  $('.videoimage img').on('click', function () {
+  }, 5000)*/
+  $('.card-description-link').on('click', function () {
+    $(this).parent().find('.card-description').show()
+    $(this).hide()
+  })
+  $('.videoimage .video-thumbnail').on('click', function () {
     $(this).parent().find('video').show()
     $(this).parent().find('video')[0].play()
-    $(this).parent().find('img').hide()
+    $(this).parent().find('.video-thumbnail').hide()
   })
   $('.mainimg').on('click', function () {
     $('html, body').animate({scrollTop: ($('#' + $(this).data('scrollTo')).offset().top)}, 'slow')
   })
-  $('.card').on('click', function () {
-    $(this).find('video source').attr('src', $(this).data('video'))
-    $(this).find('video')[0].load()
-    $(this).find('video.card-img').show()
-    $(this).find('img.card-img').hide()
-    $(this).find('.card-img-overlay').hide()
+  $('.video-thumbnail').on('click', function () {
+    var card = $(this).parent()
+    card.find('video.card-img').show()
+    card.find('video.card-img')[0].play()
+    $(this).hide()
   })
   $('.overlay').on('click', function () {
     $('.overlay').hide()

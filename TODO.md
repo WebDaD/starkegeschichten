@@ -3,40 +3,13 @@
 ## Allgemeines
 
 * Schrifttyp: Im Moment noch sehr nüchtern. Lass uns mal probieren, ob wir eine freundlichere, rundere Schrift finden.
-* Mobile Filme: Beschreibung dazu
+* Mobile Filme: Beschreibung dazu und play button (wie bei ISA)
 
-## Big
-
-? * Die Überschrift in eine Zeile setzen. Dafür die Logos kleiner machen.
-* https://www.w3schools.com/howto/howto_js_slideshow.asp
-
-## Partner
-
-Ägypten: Faroland Team (hier fehlt noch Logo, ist angefordert)
-
-Deutschland: ARDalpha (hier fehlt noch Logo, ist angefordert)
-
-Libanon: Sat7
-
-Mongolei: Mongolian National Broadcasting (MNB)
-
-Namibia: Namibian Broadcasting Corporation (NBC)
-
-Norwegen: NRK/Sapmi
-
-Taiwan: Public Television Service (PTS) & Hakka TV
-
-Thailand: Thai PBS
-
-Vietnam: VTV3
-
-Kuba: Cubavision
+* Slideshow fixen: https://www.w3schools.com/howto/howto_js_slideshow.asp (Filmtitel, Land)
 
 
 ## Die Filme
 
-Hier folgen untereinander die Filme mit Titel, Land, Inhaltsangabe und Screenshot. Frage ist, ob wir sie an der Stelle auch abspielbar machen, per Pfeil im Screenshot. Wäre doch eigentlich sinnvoll, oder? 
-Die Texte findest Du in einem separaten Dokument.
 
 Der Tag, an dem ich zum großen Bruder wurde (Ägypten, 5 min)
 Ahmeds Familie bekommt den lang ersehnten Zuwachs: Ein kleiner Bruder wird geboren. Doch das Leben mit einem kleinen Baby ist viel schwieriger, als Ahmed gedacht hat. Die Mutter benimmt sich manchmal ganz seltsam, die Eltern scheinen nur noch Augen für den Kleinen zu haben. Und dann sind da noch die stinkenden Windeln! Das Baby ist einfach nur nervig, findet er. Als er eines Tages allein auf den kleinen Bruder aufpassen muss, steht er vor großen Herausforderungen. Er muss den Kleinen nicht nur beruhigen und mit ihm spielen, sondern sich auch um stinkende Windeln kümmern. In dem Moment merkt Ahmed, wie sehr ihn der kleine Bruder braucht. Er fasst einen Entschluss: Von nun an verhält er sich wie ein großen Bruder. Wird er es auch schaffen, die Windeln zu wechseln? 
@@ -64,13 +37,3 @@ TangTang liebt ihre Schildkröte und eigentlich auch ihre Familie. Doch ihre Elt
 
 Ballspielen verboten!  (Thailand, 5 min)
 Es ist ein ganz normal heißer Tag in Bangkok. Issada und ihre Mädchenklasse sind schon ganz aufgeregt wegen des Völkerball-Turniers am nächsten Tag. Sie üben noch ein bisschen im Klassenzimmer, obwohl das strengstens verboten ist. Saisisom, Issadas beste Freundin, trifft dabei die Vase mit den Orchideen und die landet direkt vor den Füßen der furchterregendsten Lehrerin der ganzen Schule. Frau Sukon schimpft Saisisom und verhängt die schlimmste Strafe überhaupt: Niemand darf heute mehr mit Saisisom reden. Issada sieht die Tränen ihrer Freundin und weiß, dass die Strafe nicht gerecht ist. Sie alle haben im Klassenzimmer verbotenerweise Ball gespielt. Issada trifft eine Entscheidung. Sie steht auf, gesteht, dass auch sie beteiligt war und bittet um die gleiche Strafe, die Saisisom bekommen hat. Zu ihrer Überraschung tun die anderen Mädchen es ihr gleich. Wie wird die strenge Lehrerin reagieren?
-
-
-
-## Reiter
-
-* Die Filme
-
-## Fehler
-
-* Still zu Alleine im Busch fehlt

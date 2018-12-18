@@ -25,13 +25,33 @@ h5.card-title {
 }
 
 .card-img {
-  filter: brightness(50%);
-}
-.card:hover .card-img {
-  filter: brightness(100%);
-}
-.card:hover {
   cursor: pointer;
+}
+.video-thumbnail {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.video-thumbnail:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "\f144";
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 900;
+  font-size: 140px;
+  color: #fff;
+  opacity: .8;
+  text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+.video-thumbnail:hover:before {
+  color: #eee;
 }
 
 .overlay {
@@ -56,6 +76,10 @@ h5.card-title {
   width:80%;
   margin: 0 auto;
   display: block;
+}
+
+.partner-spacer {
+  height:10px;
 }
 
 @media (max-width: 577px) { 
@@ -89,7 +113,7 @@ h5.card-title {
     font-size:4.7vw;
   }
   .partnerlogo {
-    max-width: 100px;
+    max-width: 80px;
   }
 
 }
@@ -107,7 +131,7 @@ h5.card-title {
     font-size:1.7vw;
   }
   .partnerlogo {
-    max-width: 256px;
+    max-width: 100px;
   }
 }
 .jumbotron {
@@ -134,4 +158,7 @@ video.card-img {
 }
 .videoimage img {
   cursor:pointer;
+}
+.card-description {
+  display: none;
 }
