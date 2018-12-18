@@ -6,4 +6,6 @@
 
 * Slideshow fixen: https://www.w3schools.com/howto/howto_js_slideshow.asp (Filmtitel, Land) use scrollTo
 
+* Button nach oben (unten rechts)
+
 * rebuild in pug!
