@@ -3,7 +3,6 @@
 ## Allgemeines
 
 * Schrifttyp: Im Moment noch sehr nüchtern. Lass uns mal probieren, ob wir eine freundlichere, rundere Schrift finden.
-* Mobile Filme: Beschreibung dazu und play button (wie bei ISA)
 
 * Slideshow fixen: https://www.w3schools.com/howto/howto_js_slideshow.asp (Filmtitel, Land)
 
@@ -11,14 +10,8 @@
 ## Die Filme
 
 
-Der Tag, an dem ich zum großen Bruder wurde (Ägypten, 5 min)
-Ahmeds Familie bekommt den lang ersehnten Zuwachs: Ein kleiner Bruder wird geboren. Doch das Leben mit einem kleinen Baby ist viel schwieriger, als Ahmed gedacht hat. Die Mutter benimmt sich manchmal ganz seltsam, die Eltern scheinen nur noch Augen für den Kleinen zu haben. Und dann sind da noch die stinkenden Windeln! Das Baby ist einfach nur nervig, findet er. Als er eines Tages allein auf den kleinen Bruder aufpassen muss, steht er vor großen Herausforderungen. Er muss den Kleinen nicht nur beruhigen und mit ihm spielen, sondern sich auch um stinkende Windeln kümmern. In dem Moment merkt Ahmed, wie sehr ihn der kleine Bruder braucht. Er fasst einen Entschluss: Von nun an verhält er sich wie ein großen Bruder. Wird er es auch schaffen, die Windeln zu wechseln? 
-
 Stromausfall (Argentinien, 5 min)
 Normalerweise hat Tina nie Angst, wenn sie alleine Zuhause ist. Aber eines Tages, als ihre Mutter gerade weggegangen ist, fällt der Strom aus. Es ist dunkel, ein heftiges Gewitter schlägt gegen die Scheiben. Ihre Mutter hat ihr gesagt, dass sie anrufen soll, wenn irgendetwas passiert. Blöderweise funktioniert das Telefon aber auch nur mit Strom. Jetzt bekommt Tina Angst und für einen kurzen Moment weiß sie nicht, was sie machen soll. Dann fallen ihr ihre Spielzeuge ein, die im Dunkeln leuchten können. Aber die sind oben in ihrem Zimmer. Sie beruhigt sich selbst, indem sie singt, steigt tapfer die dunklen Stufen hoch, geht in ihr Zimmer und erschafft eine wunderschöne Atmoshpäre mit ihrer Leuchtkugel und ihren leuchtenden Spielzeugen. Sie hat sich ihrer Angst gestellt. Als der Strom wieder da ist, weiß sie, dass sie stark ist.
-
-Isa und der Kirschbaum (Deutschland, 5 min)
-Die achtjährige Isa macht mit ihrer Mutter Ferien auf einem Bauernhof in Niederbayern, wo es einen flauschigen Hofhund und einem großen Kirschbaum gibt. Isa wundert sich, dass die Bäuerin die Kirschen, die ganz oben im Baum wachsen, nicht pflücken will. „Da komm ma net aufi, di san fier die Viergel“, erklärt die Bäuerin. „Da kommen wir nicht rauf?“ fragt sich Isa und probiert es aus. Am Anfang geht es gut. Aber ab einem bestimmten Punkt weiß sie nicht mehr, wie es weitergeht. Und je höher sie kommt, desto stärker bläst der Wind. Was soll sie tun? Aufgeben oder nach einem sicheren Platz im Baum suchen, um die süßen Kirschen zu essen?
 
 Geschlagen (Libanon, 5 min)
 Essra ist 8 Jahre und vor 5 Jahren aus Syrien geflohen. Seitdem lebt sie mit ihrer Familie in Beirut. Sie geht gerne zur Schule. Ihr älterer Bruder jedoch hat weniger Spaß am Unterricht. Eigentlich wäre er in der 9. Klasse, aber als Flüchtling muss er in die sechste. Die Lehrer haben ihn auf dem Kieker, besonders Herr Abud, der Schulhofaufseher. Eines Tages erwischt Herr Abud Mustafa, als der verbotenerweise am Schulhof rennt. Der 14-Jährige muss mit ihm in sein Büro. Als er wieder herauskommt, sind seine Hände voller roter Striemen – er wurde vom Lehrer geschlagen. Essra hat das Gefühl, sie muss es etwas gegen diese Ungerechtigkeit tun und konfrontiert den Lehrer.
