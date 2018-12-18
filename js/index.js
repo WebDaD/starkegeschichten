@@ -72,7 +72,7 @@ $(document).ready(function () {
   var pos = $('svg path#' + country + ', svg text#' + country + ', svg rect#' + country).offset()
   $('body').last().after('<img data-country="' + country + '" src="images/flag-' + country + '.png" style="left:' + pos.left + 'px;top:' + pos.top + 'px" class="flag-marker" onclick="loadVideo(\'' + country + '\')"/>')
 } */
-function loadVideo (country) {
+/* function loadVideo (country) {
   let video = ''
   switch (country) {
     case 'de': video = 'videos/1_Kirschbaum_Deutschland.mp4'; break
@@ -92,19 +92,19 @@ function loadVideo (country) {
     $('.custom-modal video source').attr('src', video)
     $('.custom-modal video')[0].load()
   }
-}
+} */
 function scrollTo (country) {
   let element = ''
   switch (country) {
-    case 'de': element = 'videos/1_Kirschbaum_Deutschland.mp4'; break
+    case 'de': element = 'kirschbaum'; break
     case 'eg': element = 'grosser_bruder'; break
-    case 'no': element = 'videos/3_Nicht_Rosa_Norwegen.mp4'; break
-    case 'lb': element = 'videos/4-Geschlagen_Syrien.mp4'; break
-    case 'th': element = 'videos/7_Ballspielen_verboten_Thailand.mp4'; break
-    case 'tw': element = 'videos/11_Elternstreit_Taiwan.mp4'; break
-    case 'mn': element = 'videos/9-Sleepy_Mongolei.mp4'; break
-    case 'na': element = 'videos/8_Allein_im_Busch_Namibia.mp4'; break
-    case 'ar': element = 'videos/13-Stromausfall_Argentinien.mp4'; break
+    case 'no': element = 'bitte_nicht_rosa'; break
+    case 'lb': element = 'geschlagen'; break
+    case 'th': element = 'ballspielen_verboten'; break
+    case 'tw': element = 'elternstreit'; break
+    case 'mn': element = 'sleepy'; break
+    case 'na': element = 'allein_im_busch'; break
+    case 'ar': element = 'stromausfall'; break
     default: element = ''; break
   }
   if (element !== '') {
