@@ -5,6 +5,9 @@ $(document).ready(function () {
     showSlides(slideIndex)
   }, 5000)
   showSlides(slideIndex)
+  $('#up').on('click', function () {
+    $('html, body').animate({scrollTop: ($('#masthead').offset().top)}, 'slow')
+  })
   $('.card-description-link').on('click', function () {
     $(this).parent().find('.card-description').show()
     $(this).hide()
@@ -92,15 +95,15 @@ $(document).ready(function () {
 function scrollTo (country) {
   let element = ''
   switch (country) {
-    case 'de': element = 'kirschbaum'; break
-    case 'eg': element = 'grosser_bruder'; break
-    case 'no': element = 'bitte_nicht_rosa'; break
-    case 'lb': element = 'geschlagen'; break
-    case 'th': element = 'ballspielen_verboten'; break
-    case 'tw': element = 'elternstreit'; break
-    case 'mn': element = 'sleepy'; break
-    case 'na': element = 'allein_im_busch'; break
-    case 'ar': element = 'stromausfall'; break
+    case 'de': element = 'f-kirschbaum'; break
+    case 'eg': element = 'f-grosser_bruder'; break
+    case 'no': element = 'f-bitte_nicht_rosa'; break
+    case 'lb': element = 'f-geschlagen'; break
+    case 'th': element = 'f-ballspielen_verboten'; break
+    case 'tw': element = 'f-elternstreit'; break
+    case 'mn': element = 'f-sleepy'; break
+    case 'na': element = 'f-allein_im_busch'; break
+    case 'ar': element = 'f-stromausfall'; break
     default: element = ''; break
   }
   if (element !== '') {

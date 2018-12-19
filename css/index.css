@@ -1,5 +1,5 @@
 img.logo {
-  max-height: 100px;
+  height: 60px;
   margin-top:10px;
 }
 
@@ -29,7 +29,7 @@ h5.card-title {
 }
 .video-thumbnail {
   position: relative;
-  display: inline-block;
+  display: block;
   cursor: pointer;
 }
 .video-thumbnail:before {
@@ -113,7 +113,7 @@ h5.card-title {
     font-size:4.7vw;
   }
   .partnerlogo {
-    max-width: 80px;
+    max-height: 40px;
   }
 
 }
@@ -131,7 +131,7 @@ h5.card-title {
     font-size:1.7vw;
   }
   .partnerlogo {
-    max-width: 100px;
+    max-height: 60px;
   }
 }
 .jumbotron {
@@ -168,6 +168,10 @@ video.card-img {
   display: none;
   cursor: pointer;
 }
+.slideshow-slide img {
+  width:100%;
+  height:auto;
+}
 .slideshow-text {
   color: white;
   font-size: 26px;
@@ -193,4 +197,22 @@ video.card-img {
 @keyframes slideshow-fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+#up {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.projekt-img {
+  max-height: 400px;
+}
+
+.hr-blue {
+  border-top: 2px solid #075c98;
+}
+
+h2 {
+  color:#075c98;
 }
