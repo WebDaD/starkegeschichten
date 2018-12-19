@@ -1,14 +1,10 @@
 /* global $ */
+var slideIndex = 1
 $(document).ready(function () {
-  $('.slides > img:gt(0)').hide()
-  /*setInterval(function () {
-    $('.slides > img:first')
-      .fadeOut(1000)
-      .next()
-      .fadeIn(1000)
-      .end()
-      .appendTo('.slides')
-  }, 5000)*/
+  setInterval(function () {
+    showSlides(slideIndex)
+  }, 5000)
+  showSlides(slideIndex)
   $('.card-description-link').on('click', function () {
     $(this).parent().find('.card-description').show()
     $(this).hide()
@@ -18,8 +14,8 @@ $(document).ready(function () {
     $(this).parent().find('video')[0].play()
     $(this).parent().find('.video-thumbnail').hide()
   })
-  $('.mainimg').on('click', function () {
-    $('html, body').animate({scrollTop: ($('#' + $(this).data('scrollTo')).offset().top)}, 'slow')
+  $('.slideshow-slide').on('click', function () {
+    $('html, body').animate({scrollTop: ($('#' + $(this).find('img').data('scrollto')).offset().top)}, 'slow')
   })
   $('.video-thumbnail').on('click', function () {
     var card = $(this).parent()
@@ -110,4 +106,15 @@ function scrollTo (country) {
   if (element !== '') {
     $('html, body').animate({ scrollTop: ($('#' + element).offset().top)}, 'slow')
   }
+}
+function showSlides (n) {
+  var i
+  var slides = document.getElementsByClassName('slideshow-slide')
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none'
+  }
+  slides[slideIndex - 1].style.display = 'block'
+  slideIndex++
 }

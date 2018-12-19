@@ -86,9 +86,44 @@
   </div>
   <header class="jumbotron">
     <div class="row">
-      <div class="col-md-5 text-center slides">
-        <img class="img-fluid mainimg" src="images/Isa_und_der_Kirschbaum__Deutschland.png" data-scrollTo="kirschbaum" />
-        <img class="img-fluid mainimg" src="images/Der_Tag_an_dem_ich_zum_grossen_Bruder_wurde__aegypten.png" data-scrollTo="grosser_bruder" />
+      <div class="col-md-5 text-center slideshow-container">
+        <div class="slideshow-slide slideshow-fade">
+          <img src="images/Isa_und_der_Kirschbaum__Deutschland.png" data-scrollTo="kirschbaum" style="width:100%">
+          <div class="slideshow-text">"Isa und der Kirschbaum", Deutschland</div>
+        </div>
+        <div class="slideshow-slide slideshow-fade">
+          <img src="images/Der_Tag_an_dem_ich_zum_grossen_Bruder_wurde__aegypten.png" data-scrollTo="grosser_bruder"
+            style="width:100%">
+          <div class="slideshow-text">"Der Tag, an dem ich zum großen Bruder wurde", Ägypten</div>
+        </div>
+        <div class="slideshow-slide slideshow-fade">
+          <img src="images/Bitte_nicht_Rosa_Norwegen.png" data-scrollTo="bitte_nicht_rosa" style="width:100%">
+          <div class="slideshow-text">"Bitte nicht Rosa!", Norwegen</div>
+        </div>
+        <div class="slideshow-slide slideshow-fade">
+          <img src="images/Geschlagen!__Libanon.png" data-scrollTo="geschlagen" style="width:100%">
+          <div class="slideshow-text">"Geschlagen", Libanon</div>
+        </div>
+        <div class="slideshow-slide slideshow-fade">
+          <img src="images/Ballspielen_verboten_Thailand.png" data-scrollTo="ballspielen_verboten" style="width:100%">
+          <div class="slideshow-text">"Ballspielen verboten!", Thailand</div>
+        </div>
+        <div class="slideshow-slide slideshow-fade">
+          <img src="images/Wenn_Eltern_immer_nur_streiten__Taiwan.png" data-scrollTo="elternstreit" style="width:100%">
+          <div class="slideshow-text">"Wenn Eltern immer nur streiten", Taiwan</div>
+        </div>
+        <div class="slideshow-slide slideshow-fade">
+          <img src="images/Sleepy_das_Kueken__Mongolei.png" data-scrollTo="sleepy" style="width:100%">
+          <div class="slideshow-text">"Sleepy, das Küken", Mongolei</div>
+        </div>
+        <div class="slideshow-slide slideshow-fade">
+          <img src="images/Alleine_im_busch.png" data-scrollTo="allein_im_busch" style="width:100%">
+          <div class="slideshow-text">"Allein im Busch", Namibia</div>
+        </div>
+        <div class="slideshow-slide slideshow-fade">
+          <img src="images/Stromausfall__Argentinien.png" data-scrollTo="stromausfall" style="width:100%">
+          <div class="slideshow-text">"Stromausfall", Argentinien</div>
+        </div>
       </div>
       <div class="col-md-7">
         Wann hast du eigentlich gemerkt, dass du stark bist?<br /><br />
@@ -150,7 +185,7 @@
     <hr />
     <div id="flow">
       <h2 id="deutschland"><span class="flag-icon flag-icon-de"></span> Deutschland</h2>
-      <div class="card">
+      <div class="card" id="kirschbaum">
         <div class="video-thumbnail">
           <img class="card-img video-link" src="images/Isa_und_der_Kirschbaum__Deutschland.png" />
         </div>
@@ -173,7 +208,7 @@
       </div>
       <hr />
       <h2 id="ägypten"><span class="flag-icon flag-icon-eg"></span> Ägypten</h2>
-      <div class="card">
+      <div class="card" id="grosser_bruder">
         <div class="video-thumbnail">
           <img class="card-img video-link" src="images/Der_Tag_an_dem_ich_zum_grossen_Bruder_wurde__aegypten.png" />
         </div>
@@ -197,7 +232,7 @@
       </div>
       <hr />
       <h2 id="norwegen"><span class="flag-icon flag-icon-no"></span> Norwegen</h2>
-      <div class="card">
+      <div class="card" id="bitte_nicht_rosa">
         <div class="video-thumbnail">
           <img class="card-img video-link" src="images/Bitte_nicht_Rosa_Norwegen.png" />
         </div>
@@ -220,7 +255,7 @@
       </div>
       <hr />
       <h2 id="libanon"><span class="flag-icon flag-icon-lb"></span> Libanon</h2>
-      <div class="card">
+      <div class="card" id="geschlagen">
         <div class="video-thumbnail">
           <img class="card-img video-link" src="images/Geschlagen!__Libanon.png" />
         </div>
@@ -243,7 +278,7 @@
       </div>
       <hr />
       <h2 id="thailand"><span class="flag-icon flag-icon-th"></span> Thailand</h2>
-      <div class="card">
+      <div class="card" id="ballspielen_verboten">
         <div class="video-thumbnail">
           <img class="card-img video-link" src="images/Ballspielen_verboten_Thailand.png" />
         </div>
@@ -268,7 +303,7 @@
       </div>
       <hr />
       <h2 id="taiwan"><span class="flag-icon flag-icon-tw"></span> Taiwan</h2>
-      <div class="card">
+      <div class="card" id="elternstreit">
         <div class="video-thumbnail">
           <img class="card-img video-link" src="images/Wenn_Eltern_immer_nur_streiten__Taiwan.png" />
         </div>
@@ -292,7 +327,7 @@
       </div>
       <hr />
       <h2 id="mongolei"><span class="flag-icon flag-icon-mn"></span> Mongolei</h2>
-      <div class="card">
+      <div class="card" id="sleepy">
         <div class="video-thumbnail">
           <img class="card-img video-link" src="images/Sleepy_das_Kueken__Mongolei.png" />
         </div>
@@ -314,7 +349,7 @@
       </div>
       <hr />
       <h2 id="namibia"><span class="flag-icon flag-icon-na"></span> Namibia</h2>
-      <div class="card">
+      <div class="card" id="allein_im_busch">
         <div class="video-thumbnail">
           <img class="card-img video-link" src="images/Alleine_im_busch.png" />
         </div>
@@ -339,7 +374,7 @@
       </div>
       <hr />
       <h2 id="argentinien"><span class="flag-icon flag-icon-ar"></span> Argentinien</h2>
-      <div class="card">
+      <div class="card" id="stromausfall">
         <div class="video-thumbnail">
           <img class="card-img video-link" src="images/Stromausfall__Argentinien.png" />
         </div>
