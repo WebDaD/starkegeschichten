@@ -1,6 +1,7 @@
 img.logo {
   height: 60px;
   margin-top:10px;
+  -ms-interpolation-mode: bicubic;
 }
 
 header {
@@ -9,8 +10,11 @@ header {
 
 h1 {
   color: #075c98;
+  font-weight: 900;
 }
-
+#masthead > .navigation > div > a {
+  font-size: 24px;
+}
 .mainimg {
   height: 256px;
   width: auto;
@@ -135,7 +139,6 @@ h5.card-title {
   }
 }
 .jumbotron {
-  margin-top:10px;
   background-color: #075c98;
   color:white;
   border-radius: 0;
@@ -213,6 +216,7 @@ video.card-img {
   border-top: 2px solid #075c98;
 }
 
+#partner > div > div > a, 
 h2 {
   color:#075c98;
 }
