@@ -14,6 +14,7 @@ h1 {
 }
 #masthead > .navigation > div > a {
   font-size: 24px;
+  padding-left: 0;
 }
 .mainimg {
   height: 256px;
@@ -86,6 +87,10 @@ h5.card-title {
   height:10px;
 }
 
+.mobile-nav-button {
+  overflow-x: hidden;
+}
+
 @media (max-width: 577px) { 
   #mobile-nav, #flow {
     display:block;
@@ -97,9 +102,6 @@ h5.card-title {
     display:none;
   }
   #filme {
-    display:none;
-  }
-  #nav-filme {
     display:none;
   }
   h1, .logocol {
