@@ -20,6 +20,9 @@ $(document).ready(function () {
   $('.slideshow-slide').on('click', function () {
     $('html, body').animate({scrollTop: ($('#' + $(this).find('img').data('scrollto')).offset().top)}, 'slow')
   })
+  $('.mobile-nav-button').on('click', function () {
+    $('html, body').animate({scrollTop: ($('#' + $(this).data('scrollto')).offset().top)}, 'slow')
+  })
   $('.video-thumbnail').on('click', function () {
     var card = $(this).parent()
     card.find('video.card-img').show()
@@ -97,17 +100,17 @@ $(document).ready(function () {
 function scrollTo (country) {
   let element = ''
   switch (country) {
-    case 'de': element = 'f-kirschbaum'; break
-    case 'eg': element = 'f-grosser_bruder'; break
-    case 'no': element = 'f-bitte_nicht_rosa'; break
-    case 'lb': element = 'f-geschlagen'; break
-    case 'th': element = 'f-ballspielen_verboten'; break
-    case 'tw': element = 'f-elternstreit'; break
-    case 'mn': element = 'f-sleepy'; break
-    case 'na': element = 'f-allein_im_busch'; break
-    case 'ar': element = 'f-stromausfall'; break
-    case 'cu': element = 'f-meer'; break
-    case 'vn': element = 'f-omelette'; break
+    case 'de': element = 'kirschbaum'; break
+    case 'eg': element = 'grosser_bruder'; break
+    case 'no': element = 'bitte_nicht_rosa'; break
+    case 'lb': element = 'geschlagen'; break
+    case 'th': element = 'ballspielen_verboten'; break
+    case 'tw': element = 'elternstreit'; break
+    case 'mn': element = 'sleepy'; break
+    case 'na': element = 'allein_im_busch'; break
+    case 'ar': element = 'stromausfall'; break
+    case 'cu': element = 'meer'; break
+    case 'vn': element = 'omelette'; break
     default: element = ''; break
   }
   if (element !== '') {
