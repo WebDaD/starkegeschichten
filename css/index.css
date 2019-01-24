@@ -21,7 +21,10 @@ h1 {
   width: auto;
 }
 
-.col-sm, .col {
+.col-sm, .col, .col-12 {
+  margin-bottom: 20px;
+}
+.row {
   margin-bottom: 20px;
 }
 
