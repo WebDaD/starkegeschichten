@@ -2,6 +2,7 @@
 var slideIndex = 1
 var mouseX
 var mouseY
+var si
 $(document).mousemove(function (e) {
   mouseX = e.pageX
   mouseY = e.pageY
@@ -15,7 +16,7 @@ $(document).ready(function () {
     }
   })
 
-  setInterval(function () {
+  si = setInterval(function () {
     showSlides(slideIndex)
   }, 5000)
   showSlides(slideIndex)
