@@ -72,6 +72,14 @@ h5.card-title {
   opacity: .8;
   text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
 }
+@media all and (-ms-high-contrast:none) {
+  .video-thumbnail {
+    height: 100%;
+  }
+  video.card-img {
+    height: 100%;
+  }
+}
 .video-thumbnail:hover:before {
   color: #eee;
 }
