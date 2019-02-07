@@ -1,6 +1,14 @@
-/* global $, history, alert */
+/* global $, history */
 var slideIndex = 1
 $(document).ready(function () {
+  // wrap card title after 30 chars
+
+  $('h5.card-title').each(function () {
+    if (!$(this).hasOverflown()) {
+      $(this).html($(this).text() + '<br/>&nbsp;')
+    }
+  })
+
   setInterval(function () {
     showSlides(slideIndex)
   }, 5000)
@@ -95,7 +103,7 @@ function scrollTo (country) {
     case 'lb': element = 'geschlagen'; break
     case 'th': element = 'ballspielen_verboten'; break
     case 'tw': element = 'elternstreit'; break
-    case 'mn': element = 'sleepy'; break
+    case 'mn': element = 'richtig'; break
     case 'na': element = 'allein_im_busch'; break
     case 'ar': element = 'stromausfall'; break
     case 'cu': element = 'meer'; break
@@ -109,7 +117,7 @@ function scrollTo (country) {
     history.pushState({}, 'Starke Geschichten für starke Kinder', '#' + element)
     $('html, body').animate({ scrollTop: ($('#' + element).offset().top)}, 'slow')
     $('.card').removeClass('active-card')
-    $('#' + element).addClass('active-card')
+    $('.card.' + country).addClass('active-card')
   }
 }
 function showSlides (n) {
@@ -122,4 +130,15 @@ function showSlides (n) {
   }
   slides[slideIndex - 1].style.display = 'block'
   slideIndex++
+}
+$.fn.hasOverflown = function () {
+  var res
+  var cont = $('<div>' + this.text() + '</div>').css('display', 'table')
+  .css('z-index', '-1').css('position', 'absolute')
+  .css('font-family', this.css('font-family'))
+  .css('font-size', this.css('font-size'))
+  .css('font-weight', this.css('font-weight')).appendTo('body')
+  res = (cont.width() >  this.width())
+  cont.remove()
+  return res
 }
